@@ -1,0 +1,427 @@
+/* ==================== */
+/* МОБИЛЬНАЯ АДАПТАЦИЯ */
+/* ==================== */
+
+/* Медиа-запрос для мобильных устройств */
+@media (max-width: 768px) {
+  body {
+    padding: 10px !important;
+    font-size: 16px !important; /* Увеличиваем для читаемости */
+    -webkit-text-size-adjust: 100%; /* Предотвращает зум текста в iOS */
+  }
+  
+  .container {
+    min-width: unset !important;
+    max-width: 100% !important;
+    padding: 15px !important;
+    border-radius: 12px !important;
+    margin: 0 !important;
+  }
+  
+  h1 {
+    font-size: 24px !important;
+    margin-bottom: 25px !important;
+  }
+  
+  .setting {
+    margin-bottom: 25px !important;
+  }
+  
+  label {
+    font-size: 18px !important;
+    margin-bottom: 12px !important;
+  }
+  
+  select, 
+  input[type="number"],
+  input[type="range"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 12px !important;
+    font-size: 16px !important;
+    min-height: 48px !important; /* Минимальная высота для касания */
+    border-radius: 8px !important;
+  }
+  
+  /* Улучшаем переключатели для мобильных */
+  .toggle-switch {
+    margin: 15px 0 !important;
+  }
+  
+  .toggle-switch .switch-track {
+    width: 52px !important;
+    height: 28px !important;
+    border-radius: 14px !important;
+  }
+  
+  .toggle-switch .switch-thumb {
+    width: 24px !important;
+    height: 24px !important;
+    top: 2px !important;
+    left: 2px !important;
+  }
+  
+  .toggle-switch input[type="checkbox"]:checked + .switch-track .switch-thumb {
+    transform: translateX(24px) !important;
+  }
+  
+  button {
+    max-width: 100% !important;
+    padding: 15px !important;
+    font-size: 18px !important;
+    min-height: 52px !important; /* Минимальная высота для касания */
+    border-radius: 8px !important;
+    margin: 15px auto !important;
+  }
+  
+  /* Стили для кнопок стилей */
+  .style-switcher {
+    gap: 15px !important;
+    margin: 20px 0 !important;
+  }
+  
+  .style-btn {
+    width: 50px !important;
+    height: 50px !important;
+    font-size: 18px !important;
+  }
+  
+  #wishlistWarningValue {
+    font-size: 18px !important;
+    display: block;
+    margin-top: 5px !important;
+  }
+  
+  .tooltip-icon {
+    font-size: 18px !important;
+    margin-left: 8px !important;
+  }
+  
+  .settings-divider {
+    margin: 30px 0 !important;
+  }
+}
+
+/* Стили для очень маленьких экранов */
+@media (max-width: 480px) {
+  body {
+    padding: 5px !important;
+  }
+  
+  .container {
+    padding: 12px !important;
+  }
+  
+  h1 {
+    font-size: 22px !important;
+  }
+  
+  button {
+    padding: 12px !important;
+    font-size: 17px !important;
+  }
+}
+
+/* ============================= */
+/* СТИЛИ ДЛЯ КНОПОК РАСШИРЕНИЯ */
+/* ============================= */
+
+/* Основные кнопки расширения на страницах сайта */
+.wishlist-toggle-btn,
+.mobile-create-lot-btn,
+.trade-wishlist-btn,
+.trade-owners-btn,
+.tradeOffer-wishlist-btn,
+.tradeOffer-owners-btn,
+.remelt-wishlist-btn,
+.remelt-owners-btn,
+.market-wishlist-btn,
+.market-owners-btn,
+.split-wishlist-btn,
+.split-owners-btn,
+.deckCreate-wishlist-btn,
+.deckCreate-owners-btn,
+.marketCreate-wishlist-btn,
+.marketCreate-owners-btn,
+.marketRequestCreate-wishlist-btn,
+.marketRequestCreate-owners-btn {
+  /* Базовые стили */
+  transition: all 0.2s ease !important;
+  cursor: pointer !important;
+  border: none !important;
+  outline: none !important;
+  user-select: none !important;
+  -webkit-tap-highlight-color: transparent !important; /* Убирает синий фон при тапе на iOS */
+}
+
+/* Увеличение для мобильных */
+@media (max-width: 768px) {
+  .wishlist-toggle-btn,
+  .mobile-create-lot-btn,
+  .trade-wishlist-btn,
+  .trade-owners-btn,
+  .tradeOffer-wishlist-btn,
+  .tradeOffer-owners-btn,
+  .remelt-wishlist-btn,
+  .remelt-owners-btn,
+  .market-wishlist-btn,
+  .market-owners-btn,
+  .split-wishlist-btn,
+  .split-owners-btn,
+  .deckCreate-wishlist-btn,
+  .deckCreate-owners-btn,
+  .marketCreate-wishlist-btn,
+  .marketCreate-owners-btn,
+  .marketRequestCreate-wishlist-btn,
+  .marketRequestCreate-owners-btn {
+    min-height: 44px !important;
+    min-width: 44px !important;
+    font-size: 14px !important;
+    padding: 12px 18px !important;
+    margin: 6px !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+  }
+  
+  /* Эффект при нажатии на мобильных */
+  .wishlist-toggle-btn:active,
+  .mobile-create-lot-btn:active,
+  .trade-wishlist-btn:active,
+  .trade-owners-btn:active,
+  .tradeOffer-wishlist-btn:active,
+  .tradeOffer-owners-btn:active,
+  .remelt-wishlist-btn:active,
+  .remelt-owners-btn:active,
+  .market-wishlist-btn:active,
+  .market-owners-btn:active,
+  .split-wishlist-btn:active,
+  .split-owners-btn:active,
+  .deckCreate-wishlist-btn:active,
+  .deckCreate-owners-btn:active,
+  .marketCreate-wishlist-btn:active,
+  .marketCreate-owners-btn:active,
+  .marketRequestCreate-wishlist-btn:active,
+  .marketRequestCreate-owners-btn:active {
+    transform: scale(0.96) !important;
+    opacity: 0.9 !important;
+  }
+}
+
+/* Специфичные стили для кнопки создания лота */
+.mobile-create-lot-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 6px !important;
+  font-weight: bold !important;
+  box-shadow: 0 3px 8px rgba(102, 126, 234, 0.3) !important;
+  position: absolute !important;
+  bottom: 8px !important;
+  left: 8px !important;
+  z-index: 1000 !important;
+}
+
+.mobile-create-lot-btn:hover {
+  box-shadow: 0 5px 12px rgba(102, 126, 234, 0.4) !important;
+  transform: translateY(-2px) !important;
+}
+
+.mobile-create-lot-btn:active {
+  box-shadow: 0 2px 4px rgba(102, 126, 234, 0.3) !important;
+  transform: translateY(0) !important;
+}
+
+/* Адаптация для очень маленьких экранов */
+@media (max-width: 360px) {
+  .mobile-create-lot-btn {
+    padding: 8px 12px !important;
+    font-size: 12px !important;
+    min-width: 50px !important;
+    min-height: 36px !important;
+  }
+}
+
+/* Стили для меток желающих/владельцев */
+.wishlist-warning,
+.owners-count {
+  transition: all 0.3s ease !important;
+}
+
+/* Увеличение меток на мобильных */
+@media (max-width: 768px) {
+  .wishlist-warning,
+  .owners-count {
+    font-size: 14px !important;
+    padding: 6px 10px !important;
+    min-height: 32px !important;
+    min-width: 40px !important;
+    border-radius: 6px !important;
+    z-index: 100 !important;
+  }
+  
+  /* Увеличиваем иконки в метках */
+  .wishlist-warning svg,
+  .owners-count svg {
+    width: 16px !important;
+    height: 16px !important;
+  }
+}
+
+/* ========================= */
+/* СТИЛИ ДЛЯ КНОПКИ ЛОКА */
+/* ========================= */
+
+.trade__main-item .lock-card-btn {
+  position: absolute !important;
+  right: 8px !important;
+  bottom: 8px !important;
+  z-index: 11 !important;
+}
+
+.trade__main-item .lock-card-btn i.icon {
+  color: white !important;
+}
+
+.trade__main-item {
+  position: relative !important;
+}
+
+/* Адаптация кнопки лока для мобильных */
+@media (max-width: 768px) {
+  .trade__main-item .lock-card-btn {
+    right: 5px !important;
+    bottom: 5px !important;
+    padding: 8px !important;
+    min-width: 36px !important;
+    min-height: 36px !important;
+  }
+}
+
+/* ======================= */
+/* iOS СПЕЦИФИЧНЫЕ СТИЛИ */
+/* ======================= */
+
+@supports (-webkit-touch-callout: none) {
+  /* iOS не поддерживает :hover, заменяем на :active */
+  button:hover {
+    opacity: 1 !important;
+  }
+  
+  button:active {
+    opacity: 0.8 !important;
+  }
+  
+  /* Улучшаем скролл на iOS */
+  .container {
+    -webkit-overflow-scrolling: touch !important;
+  }
+  
+  /* Фикс для input[type="range"] на iOS */
+  input[type="range"] {
+    -webkit-appearance: none !important;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    width: 24px !important;
+    height: 24px !important;
+    border-radius: 50% !important;
+  }
+}
+
+/* ====================== */
+/* ТЕМЫ ДЛЯ МОБИЛЬНЫХ */
+/* ====================== */
+
+/* Адаптация стиля 1 для мобильных */
+@media (max-width: 768px) {
+  body.style-1 .container {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6) !important;
+  }
+  
+  body.style-1 button {
+    background: linear-gradient(135deg, #8a4af3, #6a3ac3) !important;
+  }
+}
+
+/* Адаптация стиля 2 для мобильных */
+@media (max-width: 768px) {
+  body.style-2 .container {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15) !important;
+  }
+  
+  body.style-2 button {
+    background: linear-gradient(135deg, #3498db, #2980b9) !important;
+  }
+}
+
+/* Адаптация стиля 3 для мобильных */
+@media (max-width: 768px) {
+  body.style-3 .container {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7) !important;
+  }
+  
+  body.style-3 button {
+    background: linear-gradient(135deg, #e67e22, #d35400) !important;
+  }
+}
+
+/* ========================= */
+/* ДОПОЛНИТЕЛЬНЫЕ УЛУЧШЕНИЯ */
+/* ========================= */
+
+/* Предотвращение выделения текста при тапе */
+button, 
+label, 
+.toggle-switch {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+/* Анимация загрузки для кнопок */
+@keyframes button-loading {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+button.loading {
+  animation: button-loading 1.5s infinite !important;
+  pointer-events: none !important;
+}
+
+/* Стили для отключенных кнопок на мобильных */
+@media (max-width: 768px) {
+  button:disabled {
+    opacity: 0.5 !important;
+    cursor: not-allowed !important;
+  }
+}
+
+/* Адаптация tooltip для мобильных */
+@media (max-width: 768px) {
+  .tooltip-icon {
+    position: relative !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 24px !important;
+    height: 24px !important;
+    border-radius: 50% !important;
+    background: rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  body.style-1 .tooltip-icon {
+    background: rgba(255, 255, 255, 0.1) !important;
+  }
+  
+  body.style-2 .tooltip-icon {
+    background: rgba(0, 0, 0, 0.05) !important;
+  }
+  
+  body.style-3 .tooltip-icon {
+    background: rgba(255, 255, 255, 0.05) !important;
+  }
+}
