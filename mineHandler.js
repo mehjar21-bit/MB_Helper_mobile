@@ -1,3 +1,4 @@
+// Отключено, так как считается скриптом
 import { log, logWarn, logError, isExtensionContextValid } from './utils.js';
 import { csrfToken } from './api.js';
 import { getSettings } from './settings.js'; 
@@ -80,4 +81,5 @@ export const startMiningProcess = async (updateButtonStateCallback, updateCounte
 
     updateButtonStateCallback(false);
     updateCounterCallback(successfulHits, hitsToSend, finalMessage); 
+
 };
